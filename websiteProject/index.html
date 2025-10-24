@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Glow Beauty Store</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (CDN) -->
+  <!-- ✅ WORKING FONT AWESOME LINK -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+  <div class="left">
+    <div class="logo">Business Name</div>
+  </div>
+
+  <nav class="nav-menu">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#products">Featured</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#collections">Collections</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+    </ul>
+  </nav>
+
+  <div class="right">
+    <!-- Search -->
+   <button class="icon-btn" id="searchIcon" aria-label="Search">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+
+
+    <!-- Cart -->
+    <button class="icon-btn cart-btn" id="openCart" aria-label="Cart">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span class="cart-badge" id="cartCount">0</span>
+    </button>
+
+    <!-- Login -->
+    <button class="icon-btn login-btn" id="openLogin" aria-label="Login">
+      <i class="fa-regular fa-user"></i>
+    </button>
+
+    <!-- Hamburger (mobile) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+</header>
+
+
+  <!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content fade-in">
+    <div class="hero-text">
+      <div class="small-brand">Business Name</div>
+      <h1 class="hero-title">
+        Glow <br><span class="highlight-bg">Starts Here</span>
+      </h1>
+      <p class="hero-sub">
+        Discover your beauty with our premium skincare and makeup range — handcrafted ingredients and made to glow.
+      </p>
+
+      <div class="hero-cta">
+        <button class="btn">Shop Now</button>
+      </div>
+
+      <!-- social icons row -->
+      <div class="hero-social">
+        <a href="#" class="social" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social" aria-label="linkedin"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+  <img src="Layer 6/qw (2).png" alt="Model holding product" class="hero-img">
+</div>
+
+  </div>
+</section>
+
+
+  <!-- CATEGORIES (unique single cards) -->
+<section id="categories" class="categories section">
+  <h2 class="section-title">Our Categories</h2>
+  <div class="category-container">
+    <div class="category-card fade-in">
+      <div class="circle-wrap">
+        <img src="Layer 6/Layer 1.png" alt="Lipsticks">
+      </div>
+      <div class="cat-box"><p>Lipsticks</p></div>
+    </div>
+
+    <div class="category-card fade-in">
+      <div class="circle-wrap">
+        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=600&q=80" alt="Makeup">
+      </div>
+      <div class="cat-box"><p>Makeup</p></div>
+    </div>
+
+    <div class="category-card fade-in">
+      <div class="circle-wrap">
+        <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=600&q=80" alt="Skincare">
+      </div>
+      <div class="cat-box"><p>Skincare</p></div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FEATURED PRODUCTS (rating badge over image) -->
+<section id="products" class="products section">
+  <h2 class="section-title">Featured Products</h2>
+  <div class="product-container">
+    <article class="product-card fade-in">
+      <div class="product-media">
+        <div class="rating-badge"><span class="stars">★★★★☆</span><span class="rating-num">4.5</span></div>
+        <img src="Layer 6/Layer 5.png" alt="Matte Lipstick">
+      </div>
+      <h3>Matte Lipstick</h3>
+      <div class="price-row">
+        <span class="price">$29.99</span>
+        <button class="btn add-to-cart" data-name="Matte Lipstick" data-price="29.99">Add to cart</button>
+      </div>
+    </article>
+
+    <article class="product-card fade-in">
+      <div class="product-media">
+        <div class="rating-badge"><span class="stars">★★★★★</span><span class="rating-num">5.0</span></div>
+        <img src="Layer 6/Layer 6 copy.png" alt="Glow Serum">
+      </div>
+      <h3>Glow Serum</h3>
+      <div class="price-row">
+        <span class="price">$35.99</span>
+        <button class="btn add-to-cart" data-name="Glow Serum" data-price="35.99">Add to cart</button>
+      </div>
+    </article>
+
+    <article class="product-card fade-in">
+      <div class="product-media">
+        <div class="rating-badge"><span class="stars">★★★★☆</span><span class="rating-num">4.2</span></div>
+        <img src="Layer 6/Layer 7 copy.png" alt="Makeup Kit">
+      </div>
+      <h3>Makeup Kit</h3>
+      <div class="price-row">
+        <span class="price">$39.99</span>
+        <button class="btn add-to-cart" data-name="Makeup Kit" data-price="39.99">Add to cart</button>
+      </div>
+    </article>
+
+    
+    <!-- Additional 5 products -->
+    <article class="product-card fade-in">
+      <div class="product-media">
+        <div class="rating-badge"><span class="stars">★★★★☆</span><span class="rating-num">4.3</span></div>
+        <img src="Layer 6/Layer 11 copy.png" alt="Blush Palette">
+      </div>
+      <h3>Blush Palette</h3>
+      <div class="price-row">
+        <span class="price">$25.99</span>
+        <button class="btn add-to-cart" data-name="Blush Palette" data-price="25.99">Add to cart</button>
+      </div>
+    </article>
+
+    <article class="product-card fade-in">
+      <div class="product-media">
+        <div class="rating-badge"><span class="stars">★★★★★</span><span class="rating-num">5.0</span></div>
+        <img src="Layer 6/Layer 5.png" alt="Face Cream">
+      </div>
+      <h3>Face Cream</h3>
+      <div class="price-row">
+        <span class="price">$42.99</span>
+        <button class="btn add-to-cart" data-name="Face Cream" data-price="42.99">Add to cart</button>
+      </div>
+    </article>
+
+    <article class="product-card fade-in">
+      <div class="product-media">
+        <div class="rating-badge"><span class="stars">★★★★☆</span><span class="rating-num">4.4</span></div>
+        <img src="Layer 6/Layer 6 copy.png" alt="Lip Gloss">
+      </div>
+      <h3>Lip Gloss</h3>
+      <div class="price-row">
+        <span class="price">$19.99</span>
+        <button class="btn add-to-cart" data-name="Lip Gloss" data-price="19.99">Add to cart</button>
+      </div>
+    </article>
+
+    <article class="product-card fade-in">
+      <div class="product-media">
+        <div class="rating-badge"><span class="stars">★★★★★</span><span class="rating-num">5.0</span></div>
+        <img src="Layer 6/Layer 7 copy.png" alt="Eye Shadow Kit">
+      </div>
+      <h3>Eye Shadow Kit</h3>
+      <div class="price-row">
+        <span class="price">$45.99</span>
+        <button class="btn add-to-cart" data-name="Eye Shadow Kit" data-price="45.99">Add to cart</button>
+      </div>
+    </article>
+
+    <article class="product-card fade-in">
+      <div class="product-media">
+        <div class="rating-badge"><span class="stars">★★★★☆</span><span class="rating-num">4.7</span></div>
+        <img src="Layer 6/Layer 11 copy.png" alt="Highlighter Stick">
+      </div>
+      <h3>Highlighter Stick</h3>
+      <div class="price-row">
+        <span class="price">$27.99</span>
+        <button class="btn add-to-cart" data-name="Highlighter Stick" data-price="27.99">Add to cart</button>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+  <!-- ABOUT US (image left, text right on desktop) -->
+  <section id="about" class="about section">
+    <div class="about-wrap fade-in">
+      <div class="about-image">
+        <img src="Layer 6/Untitled-1-01.jpg" alt="About us">
+      </div>
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>We’re passionate about helping you glow from within. Our mission is to provide natural, high-quality products that enhance your confidence and radiance. We combine science and nature to create formulations that work for every skin type.</p>
+        <p class="muted">Cruelty-free · Natural extracts · Dermatologist tested</p>
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLLECTIONS -->
+<section id="collections" class="collections section">
+  <h2 class="section-title">Our Collections</h2>
+  
+  <div class="collection-container">
+    <div class="collection-card fade-in">
+      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80" alt="Luxury Beauty">
+      <h4>Luxury Beauty</h4>
+      <button class="btn btn-collection">Shop Now</button>
+    </div>
+
+    <div class="collection-card fade-in">
+      <img src="Layer 6/22975695400_7d4787dbed_b.png" alt="Natural Glow">
+      <h4>Natural Glow</h4>
+      <button class="btn btn-collection">Shop Now</button>
+    </div>
+
+    <div class="collection-card fade-in">
+      <img src="Layer 6/Layer 9.png" alt="Everyday Essentials">
+      <h4>Everyday Essentials</h4>
+      <button class="btn btn-collection">Shop Now</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROMO BANNER (image background + CTA) -->
+<section class="promo section">
+  <div class="promo-inner">
+    <img src="Layer 6/Layer 10.png" alt="Promo banner" class="promo-bg">
+
+    <div class="promo-text">
+      <h3>Timeless Beauty</h3>
+      <p class="promo-sub">Starts Here</p>
+      <p class="promo-desc">Discover luxury skincare and makeup that enhance your glow every day.</p>
+      <button class="btn">Shop Now</button>
+    </div>
+  </div>
+</section>
+
+
+  </section>
+
+  <!-- FEEDBACK -->
+  <section id="feedback" class="feedback section">
+    <h2 class="section-title">Customer Feedbacks</h2>
+    <div class="feedback-container">
+      <div class="feedback-card fade-in">
+        <div class="badge-stars">★★★★★</div>
+        <p>"Amazing quality and fast delivery!"</p>
+        <h4>- John D.</h4>
+      </div>
+      <div class="feedback-card fade-in highlighted">
+        <div class="badge-stars">★★★★★</div>
+        <p>"Love the glow these products give my skin!"</p>
+        <h4>- Jane S.</h4>
+      </div>
+      <div class="feedback-card fade-in">
+        <div class="badge-stars">★★★★☆</div>
+        <p>"Best beauty store ever! Highly recommended."</p>
+        <h4>- Mia B.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER top area -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4>Business Name</h4>
+        <p>Short tagline or address. High quality beauty & skincare.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#products">Featured</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#feedback">Feedback</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p>Subscribe for offers</p>
+        <form id="newsletterForm">
+          <input type="email" placeholder="Your email" required />
+          <button class="btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Business Name — All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- CART panel -->
+  <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="close-panel" id="closeCart" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">Total: $<span id="cartTotal">0.00</span></div>
+      <button class="btn" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <!-- LOGIN modal -->
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true"></div>
+  <div class="modal" id="loginModal" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-modal" id="closeLogin" aria-label="Close login">&times;</button>
+      <h3>Login</h3>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button class="btn" type="submit">Sign In</button>
+      </form>
+      <p class="small">This demo doesn't perform real auth — UI only.</p>
+    </div>
+  </div>
+
+  <!-- SEARCH MODAL -->
+<div class="search-modal" id="searchModal">
+  <div class="search-content">
+    <input type="text" id="modalSearchInput" placeholder="Search for products..." />
+    <button id="modalSearchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
